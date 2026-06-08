@@ -44,7 +44,7 @@ def extract_metadata(image_path):
         gps_longitude = decimal_coords(tags['GPS GPSLongitude'].values, tags['GPS GPSLongitudeRef'].values)
 
         if gps_latitude and gps_longitude:
-            print(f"\n📍 GPS-координаты:")
+            print(f"\n GPS-координаты:")
             print(f"   Широта: {gps_latitude:.6f}")
             print(f"   Долгота: {gps_longitude:.6f}")
             print(f"   Google Maps: https://www.google.com/maps?q={gps_latitude},{gps_longitude}")
